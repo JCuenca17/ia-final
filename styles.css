@@ -43,7 +43,11 @@ a {
 
 .nav__menu {
     color: var(--white);
-    padding: 6px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav__brand {
