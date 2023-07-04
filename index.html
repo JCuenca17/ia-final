@@ -26,12 +26,26 @@
         </header>
 
         <ul class="nav__container">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
         </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+    <main>
+        <form class="form" action="#">
+            <section class="form__section">
+                <label class="form__label" for="img">
+                    <i class="fas fa-cloud-upload-alt form__icon"></i>
+                    Selecciona una imagen:
+                </label>
+                <input class="form__input" type="file" name="img">
+            </section>
+            <button class="form__button" type="submit">Detectar</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">Desarrollado por José Cuenca</p>
+        <p class="footer__text">Copyright © 2023. Todos los Derechos Reservados.</p>
+    </footer>
 </body>
 
 </html>
