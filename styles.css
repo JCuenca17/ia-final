@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap');
+
 :root {
-    --primary: #021523;
-    --white: #FFFFFF;
+    --primary: #742384;
+    --white: #F7F8F9;
 }
 
 * {
@@ -12,7 +14,7 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Passion One', cursive;
 }
 
 ul {
@@ -41,6 +43,10 @@ a {
     border-bottom: 1px solid var(--white);
 }
 
+.nav__img {
+    width: 55px;
+}
+
 .nav__menu {
     color: var(--white);
     width: 40px;
@@ -53,6 +59,8 @@ a {
 .nav__brand {
     color: var(--white);
     font-size: 1.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .nav__container {
@@ -84,6 +92,28 @@ a {
     display: flex;
 }
 
-.close{
+.close {
     display: none;
+}
+
+@media (min-width: 760px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__header {
+        border: none;
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .nav__container {
+        height: auto;
+        flex-direction: row;
+        position: static;
+        width: 60%;
+    }
 }
