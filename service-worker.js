@@ -1,14 +1,19 @@
-const staticDevCoffee = "dev-coffee-site-v1"
+var GHPATH =  '/ia-final' ;
+var APP_PREFIX =  'ifpwa_' ;
+var VERSION =  'version_00' ;
+
+const staticDevIa = "dev-ia-final-v1"
 const assets = [
-  "/",
-  "/index.html",
-  "/img/yape.png",
-  "/css/styles.css",
+  `${GHPATH}/`, 
+  `${GHPATH}/index.html`, 
+  `${GHPATH}/css/styles.css`, 
+  `${GHPATH} /css/normalize.css`,
+  `${GHPATH}/img/yape.png`, 
 ]
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(staticDevIa).then(cache => {
       cache.addAll(assets)
     })
   )
