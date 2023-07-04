@@ -1,0 +1,19 @@
+{
+    "name": "Fake Yape Detector",
+    "short_name": "FYP",
+    "description": "Detector de yapes falsos",
+    "start_url": "./",
+    "scope":".",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#F7F8F9",
+    "theme_color": "#742384",
+    "newbranch":"true",
+    "icons": [
+        {
+            "src": "img/yape.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        }
+    ]
+}
