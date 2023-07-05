@@ -129,7 +129,6 @@ a {
 .footer {
     color: var(--grey2);
     text-align: center;
-    padding: 10px;
     font-size: 14px;
     position: fixed;
     left: 0;
